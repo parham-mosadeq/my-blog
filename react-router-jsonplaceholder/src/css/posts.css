@@ -1,0 +1,63 @@
+@import './global.css';
+
+.posts-container {
+  max-width: 90vw;
+  margin: 1rem auto;
+}
+
+.post-container {
+  margin: 2rem 0;
+  border: 2px solid;
+  position: relative;
+  padding: 1rem;
+}
+
+.posts-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.posts-par {
+  margin-bottom: 0.899rem;
+  text-align: center;
+}
+
+.posts-link {
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--ivory);
+  padding: 2px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Montserrat';
+}
+
+@media screen and (min-width: 762px) {
+  .posts-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .posts-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .posts-container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+.posts-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

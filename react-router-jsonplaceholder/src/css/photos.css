@@ -1,0 +1,78 @@
+@import './global.css';
+
+.photos-container {
+  max-width: 90vw;
+  min-height: 100vh;
+  margin: 2rem auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.photo-container {
+  max-height: max-content;
+  margin: 2rem;
+  transition: box-shadow 0.4s linear;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.photo-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.thumbnail-container img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: block;
+}
+
+.info-container {
+  background-color: var(--pumpkinOrange);
+  padding: 0.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.info-container h5 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-overflow: clip;
+}
+
+.img-container img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+@media screen and (min-width: 762px) {
+  .photos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .photos-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .photos-container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+  }
+}

@@ -1,0 +1,29 @@
+@import './global.css';
+
+.auth-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  font-family: 'Montserrat';
+}
+
+.auth-info {
+  border: 1px solid var(--brightGreen);
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 992px) {
+  .auth-info {
+    height: 150px;
+    padding: 2rem;
+  }
+  .auth-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .auth-par {
+    letter-spacing: 1.3px;
+    font-size: 13px;
+  }
+}

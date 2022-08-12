@@ -1,0 +1,48 @@
+@import './global';
+
+.nav-container {
+  background-color: var(--amber-clr);
+  height: auto;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Montserrat';
+}
+
+.nav-li {
+  padding: 1rem;
+  transition: all 0.2s linear;
+  border-radius: 8px;
+}
+
+.nav-li a {
+  color: var(--cornsilk);
+}
+
+.nav-li:hover {
+  background-color: #666;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .ul-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1170px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .nav-li:hover {
+    border-bottom: 1px solid var(--pumpkinOrange);
+    margin: 0;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
+:root {
+  --amber-clr: #ffbf00;
+  --bronze-clr: #ffac1c;
+  --gamboge-clr: #e49b0f;
+  --pumpkinOrange: #ff7518;
+  --brightGreen: #aaff00;
+  --forestGreen: #228b22;
+  --bloodRed: #880808;
+  --cornsilk: #fff8dc;
+  --navajoWhite: #ffdead;
+  --ivory: #faf9f6;
+
+  --font-family-bodies: 'Montserrat', sans-serif;
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > a {
+  color: var(--forestGreen);
+}
+
+button {
+  height: 2rem;
+  padding: 8px 16px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  border: 3px solid var(--pumpkinOrange);
+  cursor: pointer;
+  background-color: var(--bronze-clr);
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: 0;
+  border: 0;
+}
+
+button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-transform: capitalize;
+}

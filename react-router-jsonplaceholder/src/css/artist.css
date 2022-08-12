@@ -1,0 +1,52 @@
+.artists-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  font-family: 'Montserrat';
+  position: relative;
+}
+
+.artists-container h1 {
+  position: absolute;
+}
+
+.artist-container {
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: 1rem auto;
+  border-radius: 9px;
+  transition: transform 0.3s linear;
+}
+
+.artist-container:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .artists-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-color: #fff;
+  }
+  .artist-container {
+    min-height: 200px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .artists-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1170px;
+  }
+
+  .artist-container {
+    min-height: 200px;
+  }
+}

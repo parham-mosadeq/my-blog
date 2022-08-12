@@ -16,6 +16,9 @@ import Navbar from './Navbar';
 // importing custom hook to fetch data
 import FetchData from './FetchData';
 
+// css
+import './css/global.css';
+
 const App = () => {
   return (
     <div>
@@ -43,7 +46,10 @@ const App = () => {
 
         {/* photos start */}
         <Route path='/photos' element={<Photos />} />
-        <Route path='/photos/:photographerId' element={<Photographer />} />
+        <Route
+          path='/photos/photographer/:photographerId'
+          element={<Photographer />}
+        />
         {/* photos end */}
 
         {/* todos start */}
