@@ -38,6 +38,7 @@ const SignUp = () => {
       notify('you loged in', 'success');
     } else {
       notify('invalid data types,Please check', 'failed');
+      setErrors(validator(data));
     }
   };
   return (
@@ -54,7 +55,7 @@ const SignUp = () => {
             onChange={handleChange}
             onFocus={handleFocus}
           />
-          {touched.email ? errors.email && <span>{errors.email}</span> : null}
+          {touched.email && errors.email && <span>{errors.email}</span>}
         </div>
         {/* email input end */}
 
